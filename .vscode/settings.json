@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": true,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.clang_format_style": "file",
+    "files.associations": {
+        "iostream": "cpp",
+        "array": "cpp",
+        "ostream": "cpp",
+        "iomanip": "cpp",
+        "vector": "cpp"
+    }
+}
