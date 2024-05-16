@@ -5,6 +5,5 @@ int main() {
     Primero.Show_Information();
     Primero.Show_Video();
     Primero.Grade_Video(4);
-    Primero.Show_Video();
     return 0;
 }

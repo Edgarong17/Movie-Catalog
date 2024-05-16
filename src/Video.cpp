@@ -1,5 +1,4 @@
 #include "../include/Video.hpp"
-#include "Video.hpp"
 
 
 video::video(int ID_, std::string Name_, std::string Time_, std::string Gender_, float Grade_) {
@@ -27,6 +26,12 @@ void video::Show_Video() {
 }
 
 void video::Grade_Video(float Grade2) {
+    if (Grade2>5 || Grade2<1){
+        while(Grade2>5 || Grade2<1){
+            std::cout<<"Place a Grade between 1-5"<<std::endl;
+            std::cin>>Grade2;
+        }
+    }
     Grade=(Grade2+Grade)/2;
 }
 
