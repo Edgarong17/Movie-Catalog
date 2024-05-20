@@ -21,6 +21,9 @@ public:
     void Show_Information();
     void Show_Video();
     void Grade_Video();
+    void Calculate_Average();
+
+    friend bool operator > (const video Video1, const video Video2);
 
     void set_ID(int ID_);
     void set_Time(std::string Time_);
@@ -28,8 +31,6 @@ public:
     void set_Gender(std::string Gender_);
     void set_Average(float Average_);
     void set_Estatus(bool Estatus_);
-
-    void Calculate_Average();
 
     int get_ID();
     std::string get_Time();

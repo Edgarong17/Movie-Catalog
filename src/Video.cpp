@@ -89,3 +89,10 @@ std::string video::get_Gender() { return Gender; }
 float video::get_Average() { return Average; }
 
 bool video::get_Estatus() { return Estatus; }
+
+bool operator > (const video Video1, const video Video2) { 
+    if(Video1.Average>Video2.Average){
+        return true;
+    }
+    return false; 
+}
