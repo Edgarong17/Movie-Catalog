@@ -96,3 +96,10 @@ bool operator > (const video Video1, const video Video2) {
     }
     return false; 
 }
+
+bool operator < (const video Video1, const video Video2) { 
+    if(Video1.Average<Video2.Average){
+        return true;
+    }
+    return false; 
+}
