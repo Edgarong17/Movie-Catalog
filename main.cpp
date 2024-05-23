@@ -1,7 +1,12 @@
 #include "include/Video.hpp"
+#include "include/Serie.hpp"
 
 int main() {
     //Prueba
+    Serie PrimeraSerie(1, "Animal", "1:20:20", "Comedy", 5, 1, "Season 1", "Prelude");
+    PrimeraSerie.Show_Information();
+    PrimeraSerie.Show_Video_Information();
+    //
     video Primero (1,"Hola","1:20:20","Comedi",7);
     std::cout<<std::endl;
     Primero.Show_Information();
