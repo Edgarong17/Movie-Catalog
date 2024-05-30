@@ -18,8 +18,8 @@ private:
     bool Estatus=true;
 public:
     video(int ID_,std::string Name_,std::string Time_, std::string Gender_, float Grade_);
-    void Show_Information();
-    void Show_Video();
+    virtual void Show_Information();
+    virtual void Show_Video();
     void Grade_Video();
     void Calculate_Average();
 
