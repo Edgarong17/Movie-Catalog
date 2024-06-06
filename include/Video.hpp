@@ -2,6 +2,7 @@
 #include <string>
 #include <iomanip>
 #include <vector>
+#include <algorithm>
 
 #ifndef VIDEO_HPP
 #define VIDEO_HPP
@@ -23,8 +24,8 @@ public:
     void Grade_Video();
     void Calculate_Average();
 
-    friend bool operator > (const video Video1, const video Video2);
     friend bool operator < (const video Video1, const video Video2);
+    friend bool operator > (const video Video1, const video Video2);
 
     void set_ID(int ID_);
     void set_Time(std::string Time_);

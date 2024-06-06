@@ -33,6 +33,7 @@ void video::Grade_Video() {
     float Grade_;
     std::cout << "Place your rating: ";
     std::cin >> Grade_;
+    system("clear");
     if (Grade_ > 5 || Grade_ < 1) {
         while (Grade_ > 5 || Grade_ < 1) {
             std::cout << "Place a Grade between 1-5" << std::endl;
@@ -40,6 +41,7 @@ void video::Grade_Video() {
         }
     }
     Grade.push_back(Grade_);
+    system("clear");
     std::cout << "Grade placed" << std::endl;
     Calculate_Average();
     Show_Video();
@@ -78,14 +80,14 @@ float video::get_Average() { return Average; }
 bool video::get_Estatus() { return Estatus; }
 
 bool operator>(const video Video1, const video Video2) {
-    if (Video1.Average > Video2.Average) {
+    if (Video1.Average < Video2.Average) {
         return true;
     }
     return false;
 }
 
 bool operator<(const video Video1, const video Video2) {
-    if (Video1.Average < Video2.Average) {
+    if (Video1.Average > Video2.Average) {
         return true;
     }
     return false;
